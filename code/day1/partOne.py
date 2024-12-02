@@ -1,0 +1,1 @@
+print(sum(abs((l1 := sorted(list([int(x) for x in open("input.txt", "r").read().replace("   ", "\n").split("\n")])[::2], reverse=True))[x] - (l2 := sorted(list([int(x) for x in open("input.txt", "r").read().replace("   ", "\n").split("\n")])[1::2], reverse=True))[x]) for x in range(int(len([int(x) for x in open("input.txt", "r").read().replace("   ", "\n").split("\n")]) / 2))))
